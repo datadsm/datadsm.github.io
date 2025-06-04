@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=0"/>
   /* <title>Monthly Report Collection Page</title> */
   
  
@@ -18,21 +18,21 @@
       color: white;
       padding: 10px;
       text-align: center;
-      box-shadow: 0 2px 02px rgba(0,0,0,0.1);
+      box-shadow: 0 1px 01px rgba(0,0,0,0.05);
       /* position: sticky; */
       top: 0;
       /*z-index: 100;*/
     }
 
     .header h1 {
-      font-size: .5rem;
-      font-weight: 100;
-      text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+      font-size: .3rem;
+      font-weight: 50;
+      text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
     }
 
     .container {
       display: flex;
-      min-height: calc(100vh - 80px);
+      min-height: calc(80vh - 80px);
       gap: 20px;
       padding: 20px;
     }
@@ -47,7 +47,7 @@
       border: 1px solid rgba(255,255,255,0.2);
       height: fit-content;
       position: sticky;
-      top: 90px;
+      top: 200px;
     }
 
     .sidebar h3 {
@@ -63,7 +63,7 @@
       display: block;
       width: 100%;
       padding: 15px 20px;
-      margin-bottom: 15px;
+      margin-bottom: 25px;
       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
       color: white;
       text-decoration: none;
@@ -152,13 +152,6 @@
         padding: 10px;
       }
 
-      /* Uncomment to make sidebars stack */
-      /* .sidebar {
-        width: 100%;
-        position: relative;
-        top: 0;
-      } */
-    }
 
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(20px); }
