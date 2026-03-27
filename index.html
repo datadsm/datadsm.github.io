@@ -64,7 +64,12 @@
       border-bottom: 2px solid #667eea;
       padding-bottom: 10px;
     }
-
+	.post-area iframe {
+          border: none;
+          width: 100%;
+          height: 100%;
+          display: block; /* prevents extra spacing */
+          }
     .excel-button {
       display: block;
       width: 100%;
@@ -99,16 +104,8 @@
       height: 100%;
       }
 
-    .iframe {
-      width: 100%;
-      height: 100%;
-    }
-
-    .post-area {
-      width: 100%;
-      height: 100vh;
-    }
-
+   
+   
     .main-content {
       flex: 1;
       background: white;
@@ -131,25 +128,26 @@
       border-bottom: 2px solid #667eea;
       padding-bottom: 15px;
     }
-
     .post-area {
       flex: 1;
       background: #f8f9ff;
       border: 2px dashed #667eea;
       border-radius: 10px;
       padding: 0;
-      text-align: center;
+      text-align: left;            /* changed from center */
       color: #666;
       font-size: 1.1rem;
       overflow: hidden;
       min-height: 100%;
+      display: flex;               /* added */
+      flex-direction: column;      /* added */
+      justify-content: flex-start; /* added */
+      align-items: stretch;        /* added */
     }
+     
 
-    .post-area iframe {
-      border: none;
-      width: 100%;
-      height: 100%;
-    }
+
+    
 
     @media (max-width: 768px) {
       .container {
